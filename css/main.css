@@ -3386,7 +3386,7 @@ footer a:hover, footer a:focus {
 }
 
 .footer-bottom {
-    margin-top: 7.2rem;
+    margin-top: none;
     text-align: center;
 }
 
