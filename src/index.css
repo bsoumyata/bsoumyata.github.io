@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/*  Base / Reset                                                       */
+/* ------------------------------------------------------------------ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    @apply m-0 p-0 bg-white text-gray-800 antialiased;
+  }
+  ::selection {
+    background: rgba(5, 5, 5, 0.85);
+    color: #fff;
+  }
+  a {
+    @apply transition-colors duration-300;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Frank Ruhl Libre", serif;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Custom scrollbar                                                   */
+/* ------------------------------------------------------------------ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Pill / tag buttons used in skills + projects                       */
+/* ------------------------------------------------------------------ */
+.pill {
+  @apply inline-block px-4 py-2 m-1 rounded-full text-xs font-semibold uppercase tracking-wider
+         border border-gray-400 text-gray-600 select-none;
+}
+.pill--dark {
+  @apply inline-block px-4 py-2 m-1 rounded-full text-xs font-semibold uppercase tracking-wider
+         border border-white/20 text-white/60 select-none;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Timeline                                                           */
+/* ------------------------------------------------------------------ */
+.timeline {
+  @apply relative pl-8 border-l-2 border-gray-300;
+}
+.timeline__bullet {
+  @apply absolute -left-2.25 top-0 w-4 h-4 rounded-full bg-black border-2 border-white;
+}
+.timeline__block {
+  @apply relative pb-10;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Gallery masonry grid                                               */
+/* ------------------------------------------------------------------ */
+.masonry {
+  column-count: 3;
+  column-gap: 0px;
+}
+.masonry__brick {
+  break-inside: avoid;
+  margin-bottom: 0px;
+}
+@media (max-width: 900px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+@media (max-width: 550px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Lightbox overlay                                                   */
+/* ------------------------------------------------------------------ */
+.lightbox-overlay {
+  @apply fixed inset-0 z-9999 bg-black/90 flex items-center justify-center;
+}
+.lightbox-overlay img {
+  @apply max-w-[90vw] max-h-[90vh] object-contain rounded;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Smooth-scroll anchor offset for fixed header                       */
+/* ------------------------------------------------------------------ */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Blog / project cards two-col grid                                  */
+/* ------------------------------------------------------------------ */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -20px0-
+  margiauto2102010pxn---------------------------------------------------------------- */
+/*  Swiper overrides for Projects section                              */
+/* ------------------------------------------------------------------ */
+.projects-swiper {
+  padding: 20px 10px 56px !important;
+  overflow: hidden;
+}
+.projects-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+.projects-swiper .swiper-slide {
+  height: auto;
+}
+/* Dynamic edge fades — toggled via Swiper events */
+.projects-swiper.fade-right {
+  mask-image: linear-gradient(to right, black 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 93%, transparent 100%);
+}
+.projects-swiper.fade-left {
+  mask-image: linear-gradient(to right, transparent 0%, black 7%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%);
+}
+.projects-swiper.fade-left.fade-right {
+  mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+}
+
+/* 3D Project Cards */
+.project-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fffefb 60%, #fff 100%);
+  border: 1.5px solid rgba(160, 120, 10, 0.4);
+  box-shadow:
+    0 4px 20px -4px rgba(0, 0, 0, 0.08),
+    0 1px 4px rgba(0, 0, 0, 0.08),
+    0 0 0 0.5px rgba(160, 120, 10, 0.18);
+  transform: perspective(800px) rotateX(0deg) rotateY(0deg) translateZ(0px) scale(1);
+  transform-style: preserve-3d;
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease;
+  will-change: transform;
+}
+.project-card:hover {
+  border-color: rgba(180, 130, 10, 0.55);
+  box-shadow:
+    0 25px 60px -15px rgba(180, 130, 10, 0.18),
+    0 10px 30px -8px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(180, 130, 10, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Navigation arrows — yellow accent */
+.projects-swiper .swiper-button-next,
+.projects-swiper .swiper-button-prev {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1.5px solid rgba(160, 120, 10, 0.5);
+  backdrop-filter: blur(8px);
+  color: #78350f;
+  top: 45%;
+  padding: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+.projects-swiper .swiper-button-next {
+  right: 10px;
+}
+.projects-swiper .swiper-button-prev {
+  left: 10px;
+}
+.projects-swiper .swiper-button-next::after,
+.projects-swiper .swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: 900;
+}
+.projects-swiper .swiper-button-next:hover,
+.projects-swiper .swiper-button-prev:hover {
+  color: #78350f;
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(160, 120, 10, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Pagination — yellow accent */
+.projects-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: rgba(160, 120, 10, 0.25);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.projects-swiper .swiper-pagination-bullet-active {
+  background: #b45309;
+  width: 24px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(180, 83, 9, 0.3);
+}
