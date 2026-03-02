@@ -51,7 +51,7 @@ const projects = [
   },
   {
     date: "April 2025",
-    title: "Reliabl",
+    title: "Reliabl: AI-Powered Marketplace",
     url: "https://fresh-ai-connect.lovable.app/",
     bullets: [
       "Reliabl is an AI-powered B2B marketplace that lets small retailers vet and connect with trustworthy suppliers.",
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     date: "Feb 2025",
-    title: "Auto-Sleep Mode for Streaming Platforms",
+    title: "Auto-Sleep Mode for Streaming",
     url: "https://mercury-cover-6e9.notion.site/Case-Study-Auto-Sleep-Mode-for-Streaming-Platforms-1a44d62c6c6a803ba53ef1954e19b996",
     bullets: [
       "This case study explores the Auto-Sleep Mode feature designed to enhance user experience by detecting sleep through smartwatches and automatically pausing content on streaming platforms. It tackles challenges like false positives, integration, latency, and privacy.",
@@ -92,7 +92,7 @@ const projects = [
   },
   {
     date: "April 2019",
-    title: "ISLify",
+    title: "ISLify-ASLify",
     url: "https://github.com/bsoumyata/ISLify",
     bullets: [
       "Developed a real-time speech-to-sign language converter, translating spoken language into Indian Sign Language (ISL) and American Sign Language (ASL) gestures using an intuitive graphical interface.",
