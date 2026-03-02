@@ -28,8 +28,19 @@ const ExternalLinkIcon = () => (
 
 const projects = [
   {
+    date: "Sept 2025",
+    title: "Onboarding Buddy",
+    url: "https://github.com/bsoumyata/Onboarding-Buddy",
+    bullets: [
+      "New hires drown in setup tasks during week 1 while HR repeatedly answers the same FAQs. So, I built a solution to address both sides of the problem.",
+      'Took it end-to-end: PRD, Figma wireframes, and a working prototype using Lovable, n8n, and OpenAI with Notion as the knowledge base.',
+      "Targeted ≥90% checklist completion in week 1, ≥80% FAQ resolution without HR escalation, and a 4/5 first-week satisfaction score.",
+    ],
+    tags: "AI/LLM, Figma, AI Prototyping, n8n, Workflow Automation",
+  },
+  {
     date: "May 2025",
-    title: "Booking.com Transparency Redesign",
+    title: "Booking.com Redesign",
     url: "https://github.com/bsoumyata/booking.com-redesign",
     bullets: [
       "Redesigned the Booking.com interface to improve transparency around hidden fees and unclear policies.",
@@ -40,10 +51,10 @@ const projects = [
   },
   {
     date: "April 2025",
-    title: "Reliabl – Verified B2B Marketplace",
-    url: "https://preview--fresh-ai-connect.lovable.app/",
+    title: "Reliabl",
+    url: "https://fresh-ai-connect.lovable.app/",
     bullets: [
-      "Reliabl is an AI-powered marketplace that lets small retailers vet and connect with trustworthy suppliers.",
+      "Reliabl is an AI-powered B2B marketplace that lets small retailers vet and connect with trustworthy suppliers.",
       "The platform uses AI to generate credibility scores for both suppliers and retailers, helping both sides make informed decisions and reduce risk.",
       "Led product vision, user flow definition, and AI-driven scoring logic, while collaborating on rapid UX design and pitch materials.",
     ],
@@ -81,7 +92,7 @@ const projects = [
   },
   {
     date: "April 2019",
-    title: "ISLify: Speech-to-ISL/ASL Gesture Conversion",
+    title: "ISLify",
     url: "https://github.com/bsoumyata/ISLify",
     bullets: [
       "Developed a real-time speech-to-sign language converter, translating spoken language into Indian Sign Language (ISL) and American Sign Language (ASL) gestures using an intuitive graphical interface.",
@@ -186,10 +197,10 @@ export default function Projects() {
           >
             What I've Been Up To
           </h1>
-          <p className="text-sm md:text-md text-gray-600 max-w-2xl mx-auto">
+            <p className="text-md md:text-lg text-gray-600 max-w-2xl mx-auto">
             Explore the range of projects, blogs and case studies I have worked on independently. Click through to dive
             deeper into each piece.
-          </p>
+            </p>
           {/* Yellow accent line */}
           <div className="mt-5 w-16 h-1 rounded-full bg-linear-to-r from-amber-400 to-yellow-300 mx-auto" />
         </div>

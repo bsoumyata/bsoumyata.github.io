@@ -67,8 +67,11 @@ export default function Gallery({ onImageClick }: GalleryProps) {
             className="text-4xl md:text-5xl font-bold text-gray-900"
             style={{ fontFamily: "'Frank Ruhl Libre', serif" }}
           >
-            Some of my favorite photographs
+            Through My Lens
           </h1>
+            <p className="mt-4 md:mt-6 text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+              I travel when I can and photograph everything I see. Here are some of my favorites.
+            </p>
         </div>
 
         <div className="masonry">
