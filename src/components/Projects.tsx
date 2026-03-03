@@ -2,7 +2,7 @@ import React from "react";
 import { trackProjectClick } from "../analytics";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
-import { Navigation, Pagination, Keyboard, A11y, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -206,14 +206,13 @@ export default function Projects() {
         </div>
 
         <Swiper
-          modules={[Navigation, Pagination, Keyboard, A11y, Autoplay]}
+          modules={[Navigation, Pagination, Keyboard]}
           spaceBetween={28}
           slidesPerView={1}
           slidesOffsetBefore={40}
           navigation
           pagination={{ clickable: true, dynamicBullets: true }}
-          keyboard={{ enabled: true }}
-          autoplay={{ delay: 5000, disableOnInteraction: true, pauseOnMouseEnter: true }}
+          keyboard={{ enabled: true, onlyInViewport: true, pageUpDown: false }}
           onInit={(swiper: SwiperType) => {
             swiper.el.classList.toggle("fade-left", !swiper.isBeginning);
             swiper.el.classList.toggle("fade-right", !swiper.isEnd);
