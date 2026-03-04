@@ -22,7 +22,7 @@ export default function About() {
             on a scholarship. I started as an engineer, became a Product Manager, and somewhere along the way taught myself to build AI tools from scratch.
           <br />
           <br />
-          With 3 years of experience in the Wealth Management industry, I have shipped B2B SaaS products in enterprise fintech to help
+          With 3 years of experience, I have shipped B2B SaaS products in enterprise fintech to help
           businesses make smarter decisions and achieve better outcomes. I specialize in turning complex data into
           clear, actionable solutions that drive results. When a task is assigned to me, I make sure it gets done, I'm
           committed to seeing things through from start to finish.
