@@ -10,20 +10,19 @@ export default function About() {
           A little about me
         </h1>
         <p className="text-base md:text-lg leading-relaxed text-gray-600">
-          👋 Hey, I'm Soumyata! I'm currently pursuing MS in Technology Management at the{" "}
+          👋 Hey! I'm Soumyata, a Master's graduate from the{" "}
           <a
             href="https://illinois.edu/"
             className="text-gray-900 underline hover:text-black"
             target="_blank"
             rel="noreferrer"
           >
-            University of Illinois, Urbana-Champaign
-          </a>
-          . I am passionate about turning "What if?" ideas into products that make people think, "Wow, that works!",
-          with simplicity and usefulness in mind.
+            University of Illinois, Urbana-Champaign 
+          </a>{" "}
+            on a scholarship. I started as an engineer, became a Product Manager, and somewhere along the way taught myself to build AI tools from scratch.
           <br />
           <br />
-          With 2+ years of experience in the Wealth Management industry, I have led projects using Big Data to help
+          With 3 years of experience in the Wealth Management industry, I have shipped B2B SaaS products in enterprise fintech to help
           businesses make smarter decisions and achieve better outcomes. I specialize in turning complex data into
           clear, actionable solutions that drive results. When a task is assigned to me, I make sure it gets done, I'm
           committed to seeing things through from start to finish.

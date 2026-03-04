@@ -14,22 +14,30 @@ export default function Hero() {
       <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
 
       {/* Content — bottom-left */}
-      <div className="relative z-10 px-6 sm:px-12 md:px-60 lg:px-72 pb-36 sm:pb-48 md:pb-64 lg:pb-80 max-w-6xl">
+      <div className="relative z-10 px-6 sm:px-12 md:px-60 lg:px-72 pb-32 sm:pb-44 md:pb-60 lg:pb-[19rem] max-w-6xl">
         <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
           <span className="block w-8 sm:w-10 h-0.5 bg-amber-400" />
           <h3 className="text-xs sm:text-sm uppercase tracking-[4px] sm:tracking-[6px] text-amber-400 font-medium">
-            Portfolio
+        Portfolio
           </h3>
         </div>
-        <h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-2 sm:mb-3"
-          style={{ fontFamily: "'Frank Ruhl Libre', serif" }}
+        <div>
+          <h1
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-2 sm:mb-3 text-white"
+        style={{
+          fontFamily: "'Frank Ruhl Libre', serif",
+          textShadow: "0 6px 28px rgba(0,0,0,0.55), 0 2px 8px rgba(0,0,0,0.35)"
+        }}
+          >
+        Soumyata Binani
+          </h1>
+        <p
+        className="whitespace-nowrap text-base sm:text-lg md:text-xl text-white/90 tracking-wide font-light"
+        style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.35)" }}
         >
-          Soumyata Binani
-        </h1>
-        <p className="text-base sm:text-lg md:text-xl text-white/80 tracking-wide font-light">
-          Product Manager &nbsp;|&nbsp; Innovator &nbsp;|&nbsp; Design Thinker
+        Product Manager &nbsp;|&nbsp; 0 → 1 Builder &nbsp;|&nbsp; I help companies make things people love
         </p>
+        </div>
       </div>
 
       {/* Scroll indicator — bottom-left */}
